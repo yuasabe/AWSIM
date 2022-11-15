@@ -84,6 +84,11 @@ namespace AWSIM.RandomTraffic
             Profiler.BeginSample("NPCVehicleSimulator.Visualize");
             visualizationStep.Execute(VehicleStates, EGOVehicle);
             Profiler.EndSample();
+            
+            // Log state of vehicles
+            foreach (NPCVehicleInternalState state in VehicleStates) {
+                 Debug.Log("[MYLOG] [Pose] " + Time.fixedTime +","+ state.Vehicle.GetInstanceID() + "," + state.Position.x + "," + state.Position.y + "," + state.Position.z + "," + state.Yaw);
+            }
         }
 
         /// <summary>
