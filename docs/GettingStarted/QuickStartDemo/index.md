@@ -22,6 +22,8 @@ PC specifications that meet the following requirements are required.
 |OS|Ubutnu 20.04|
 |CPU|6cores and 12thread or higher|
 |GPU|RTX2080Ti or higher|
+|Nvidia Driver (Windows)|>=460.82|
+|Nvidia Driver (Linux)|>=460.27.03|
 
 
 ## 2. ROS localhost settings
@@ -92,7 +94,7 @@ fi
 3. Download and Run AWSIM Demo binary.
     1. Download `AWSIM_vXXX.zip` and Unzip.
 
-        [Download AWSIM Demo for ubuntu](https://github.com/tier4/AWSIM/releases/download/v1.0.0/AWSIM_v1.0.0.zip){.md-button .md-button--primary}
+        [Download AWSIM Demo for ubuntu](https://github.com/tier4/AWSIM/releases/download/v1.0.1/AWSIM_v1.0.1.zip){.md-button .md-button--primary}
     
     2. Allow permission.
 
