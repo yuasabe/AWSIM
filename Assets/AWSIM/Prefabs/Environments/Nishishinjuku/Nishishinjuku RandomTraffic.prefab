@@ -22903,6 +22903,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mgrsOffsetPosition: {x: 81655.73, y: 50137.434, z: 42.49998}
+  mgrsGridZone: 54SUE
 --- !u!1 &7285300991010974236
 GameObject:
   m_ObjectHideFlags: 0
