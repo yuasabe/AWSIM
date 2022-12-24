@@ -5,10 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/AWSIM/Scenes/Main/AutowareSimulation.unity
     guid: 9a19a6429a390f1428320cff9d4e1f10
   - enabled: 0
     path: Assets/AWSIM/Scenes/Main/exp_rsu.unity
     guid: 1eb88d23647ee33a7832c48c04cd62db
+  - enabled: 0
+    path: Assets/AWSIM/Scenes/Main/json_rsu_placement_test.unity
+    guid: 563f32346cf47b555b67f320e2a696f3
+  - enabled: 1
+    path: Assets/AWSIM/Scenes/Main/exp8.unity
+    guid: 3c23d6d9d703edacc98543add2c19b73
   m_configObjects: {}
