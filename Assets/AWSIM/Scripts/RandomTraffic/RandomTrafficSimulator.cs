@@ -36,6 +36,9 @@ namespace AWSIM.RandomTraffic
         private NPCVehicleSpawner npcVehicleSpawner;
         private NPCVehicleSimulator npcVehicleSimulator;
 
+        float timer = 0;
+        bool timerReached = false;
+
         private void Awake()
         {
             Random.InitState(seed);
@@ -50,11 +53,20 @@ namespace AWSIM.RandomTraffic
 
         private void FixedUpdate()
         {
-            SpawnRandom();
+            if (!timerReached) {
+                timer += Time.deltaTime;
+            }
 
-            npcVehicleSimulator.Update(Time.fixedDeltaTime);
+            if (timer > 10) {
+                SpawnRandom();
 
-            Despawn();
+                npcVehicleSimulator.Update(Time.fixedDeltaTime);
+
+                Despawn();
+
+                timerReached = true;
+            }
+            
         }
 
         private void Reset()
