@@ -13,8 +13,8 @@ namespace AWSIM.RandomTraffic
     public class RandomTrafficSimulator : MonoBehaviour
     {
         [SerializeField, Tooltip("Seed value for random generator.")]
-        private int seed;
-        [SerializeField] private Transform egoVehicle;
+        public int seed;
+        [SerializeField] public Transform egoVehicle;
         [SerializeField] private LayerMask vehicleLayerMask;
         [SerializeField] private LayerMask groundLayerMask;
 
