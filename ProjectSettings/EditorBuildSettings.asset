@@ -14,7 +14,13 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/AWSIM/Scenes/Main/json_rsu_placement_test.unity
     guid: 563f32346cf47b555b67f320e2a696f3
-  - enabled: 1
+  - enabled: 0
     path: Assets/AWSIM/Scenes/Main/exp8.unity
     guid: 3c23d6d9d703edacc98543add2c19b73
+  - enabled: 0
+    path: Assets/AWSIM/Scenes/Main/json_objects_placement_test.unity
+    guid: 318d03019abaa74c59d88f1ca389047d
+  - enabled: 1
+    path: Assets/AWSIM/Scenes/Main/RSU_Kashiwa.unity
+    guid: cd225d58a2218ba1bb1fb03820f2bc75
   m_configObjects: {}

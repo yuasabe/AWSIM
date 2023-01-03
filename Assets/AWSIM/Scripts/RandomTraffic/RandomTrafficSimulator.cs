@@ -57,7 +57,7 @@ namespace AWSIM.RandomTraffic
                 timer += Time.deltaTime;
             }
 
-            if (timer > 10) {
+            if (timer > 5) {
                 SpawnRandom();
 
                 npcVehicleSimulator.Update(Time.fixedDeltaTime);
