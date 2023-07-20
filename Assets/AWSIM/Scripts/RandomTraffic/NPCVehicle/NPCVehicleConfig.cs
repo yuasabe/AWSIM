@@ -15,7 +15,7 @@ namespace AWSIM.TrafficSimulation
         /// Rate of change of angular velocity per unit time.<br/>
         /// The higher the value, the faster it can turn, but the more blurred the control becomes.
         /// </summary>
-        public const float YawSpeedLerpFactor = 5f;
+        public const float YawSpeedLerpFactor = 6f;
 
         /// <summary>
         /// Slow speed at which the vehicle can immediately stop.
