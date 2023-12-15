@@ -14433,7 +14433,7 @@ MonoBehaviour:
     - {fileID: 4629332835513931928}
     - {fileID: 2862795248472856347}
     - {fileID: 2469294822153769043}
-    maximumSpawns: 10
+    maximumSpawns: 0
     enabled: 1
   routeTrafficSims: []
 --- !u!1 &8891622122958261559
