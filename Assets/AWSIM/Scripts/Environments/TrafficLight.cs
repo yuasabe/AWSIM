@@ -38,6 +38,7 @@ namespace AWSIM
             SOLID_OFF               = 0,        // Lights off.
             SOLID_ON                = 1,        // Lights on.
             FLASHING                = 2,        // Lights on every flashSec.
+            FLASHING_REVERSED       = 3,        // Lights on every flashSec.
         }
 
         /// <summary>
@@ -168,6 +169,9 @@ namespace AWSIM
                     case BulbStatus.FLASHING:
                         timer = 0;
                         Set(true); break;
+                    case BulbStatus.FLASHING_REVERSED:
+                        timer = 0;
+                        Set(false); break;
                 }
             }
 
@@ -178,7 +182,7 @@ namespace AWSIM
             /// <param name="deltaTime"></param>
             public void Update(float deltaTime)
             {
-                if (status != BulbStatus.FLASHING)
+                if ((status != BulbStatus.FLASHING) && (status != BulbStatus.FLASHING_REVERSED))
                     return;
 
                 timer += deltaTime;
